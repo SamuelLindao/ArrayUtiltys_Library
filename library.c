@@ -3,12 +3,13 @@
 #include <stdio.h>
 
 typedef const int assignValue;
+typedef unsigned short int sint;
 
 void Assign(float *value [], assignValue *valueToAssign)
 {
     const int valueSize = sizeof(value)/sizeof(value[0]) + 1;
     int newList[valueSize] = {};
-    for(short int i =0 ; i < valueSize;i++)
+    for(sint i =0 ; i < valueSize;i++)
     {
         i < valueSize - 1? newList[i] = *value[i]: newList[i] = *valueToAssign;
     }
@@ -18,7 +19,7 @@ void Assign(float *value [], assignValue *valueToAssign)
 void Assign(int *value[], assignValue *valueToAssign) {
     const int valueSize = sizeof(value)/sizeof(value[0]) + 1;
     int newList[valueSize] = {};
-    for(short int i =0 ; i < valueSize;i++)
+    for(sint i =0 ; i < valueSize;i++)
     {
         i < valueSize - 1? newList[i] = *value[i]: newList[i] = *valueToAssign;
     }
@@ -33,7 +34,7 @@ int Length(void *value[])
 void Reverse(int *value[]){
     const int valueSize = sizeof(value)/sizeof(value[0]);
     int *newValue[valueSize] = {};
-    for(int i =valueSize ; i > 0 ;i--)
+    for(sint i =valueSize ; i > 0 ;i--)
     {
         *newValue[i] = *value[i];
     }
@@ -43,7 +44,7 @@ void Reverse(int *value[]){
 void Reverse(float *value[]){
     const int valueSize = sizeof(value)/sizeof(value[0]);
     float *newValue[valueSize] = {};
-    for(int i =valueSize ; i > 0 ;i--)
+    for(sint i =valueSize ; i > 0 ;i--)
     {
         *newValue[i] = *value[i];
     }

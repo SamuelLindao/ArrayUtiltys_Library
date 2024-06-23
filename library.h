@@ -2,6 +2,7 @@
 #define ListFunctions_H
 
 typedef const int assignValue;
+typedef unsigned short int sint;
 
 void Assign(float *value[], assignValue *valueToAssign);
 void Assign(int *value[], assignValue *valueToAssign);
