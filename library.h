@@ -4,9 +4,10 @@
 typedef const int assignValue;
 typedef unsigned short int sint;
 
-void Assign(float *value[], assignValue *valueToAssign);
-void Assign(int *value[], assignValue *valueToAssign);
+void AssignFloat(float *value[], assignValue *valueToAssign);
+void AssignInt(int *value[], assignValue *valueToAssign);
 int Length(void *value[]);
-void Reverse(int *value[]);
-void Reverse(float *value[]);
+void ReverseInt(int *value[]);
+void ReverseFloat(float *value[]);
+
 #endif
